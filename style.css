@@ -1,0 +1,72 @@
+html, body {
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%; 
+    /*overflow: hidden;*/
+}
+.background {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background-position: center; 
+    background-size: cover; 
+    width: 100%; 
+    height: 100%; 
+}
+.map-container {
+    position: relative;
+    width: 1640px;
+    height: 1120px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+.hotspot {
+    position:absolute;
+    /*border: 2px solid red;*/
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* adding hover effect to the hotspots */
+.hotspot:hover {
+    animation: pulse 2s infinite;
+}
+.meadow-icon {
+    top: 352px;
+    left:966px;
+    width: 570px;
+    height: 590px;
+}
+.greenhouse-icon{
+    top: 41px;
+    left: 1150px;
+    width: 400px;
+    height: 350px;
+}
+/*Pulse animation for the icons - only pulse when hovered over?*/
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+.tooltip {
+    position: absolute;
+    background: white;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.bird {
+    position:absolute;
+    width: 50px;
+    height: auto;
+    animation: fly 20s linear infinite;
+}
+@keyframes fly {
+    0% { transform: translateX(-10px); }
+    100% { tranform: translateX(10vw); }
+}
