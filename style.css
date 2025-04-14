@@ -45,6 +45,13 @@ html, body {
     width: 400px;
     height: 350px;
 }
+.caravan-icon{
+    top: 550px;
+    left: 400px;
+    width: 540px;
+    height: 360px;
+}
+
 /*Pulse animation for the icons - only pulse when hovered over?*/
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
