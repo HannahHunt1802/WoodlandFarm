@@ -1,34 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Woodland Farm Map Application</title>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
 </head>
-<body>
-    <h1>Woodland Farm</h1>
-    <div class="map-container">
-        <img src="background.png" class="background" width="800">
-        
-        <!-- Editted Icons -->
-        <img src="meadow-icon.png" class="hotspot meadow-icon" onclick="showTooltip(event, 'Meadow')">
-        <img src="greenhouse-icon.png" class="hotspot greenhouse-icon" onclick="showTooltip(event, 'Greenhouse')">
-        <img src="caravan-icon.png" class="hotspot caravan-icon" onclick="showTooltip(event, 'Caravan')">
-        
-        <!-- Other Icons -->
-        <img src="forest-icon.png" class="hotspot" style="top: 460px; left: 160px;" onclick="showTooltip(event, 'Forest')">
-        <img src="viewpoint-icon.png" class="hotspot" style="top: 180px; left: 580px;" onclick="showTooltip(event, 'Viewpoint')">
-        <img src="campfire-icon.png" class="hotspot" style="top: 620px; left: 480px;" onclick="showTooltip(event, 'Campfire')">
-        
-        <!-- Birds -->
-        <img src="bird.png" class="bird">
-        <img src="bird.png" class="bird">
-        
-        <!-- Tooltip -->
-        <div class="tooltip" id="tooltip"></div>
-    </div>
-    <div id = "cursor" class = "custom-cursor"></div>
-    <script src="script.js"></script>
+<body onclick="goToMap()">
+  Welcome
+  <script src="script.js"></script> <!-- Link to your external JS file -->
 </body>
 </html>

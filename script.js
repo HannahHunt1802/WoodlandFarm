@@ -1,3 +1,8 @@
+// function to reveal map
+function goToMap() {
+    window.location.href = "map.html"; // Redirect to your map page
+}
+
 function showTooltip(event, text) {
     let tooltip = document.getElementById("tooltip");
     tooltip.innerHTML = `<strong>${text}</strong><br><small>Click to close</small>`;
@@ -7,6 +12,7 @@ function showTooltip(event, text) {
     tooltip.style.opacity = "1";
     tooltip.onclick = () => tooltip.style.opacity = "0";
 }
+
 //bird animation js
 document.addEventListener("DOMContentLoaded", () => {
     const birds = document.querySelectorAll(".bird");

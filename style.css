@@ -1,4 +1,5 @@
 * {
+    /* getting rid of default cursor */
     cursor: none !important;
 }
 html, body {
