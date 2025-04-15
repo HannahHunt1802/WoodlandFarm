@@ -24,3 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
         bird.style.animationDuration = randomDuration + "s";
     });
 });
+
+//cursor
+const cursor = document.getElementById("cursor");
+// following cursor
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.pageX + "px";
+  cursor.style.top = e.pageY + "px";
+});
+// when cursor clicks add clicked class
+document.addEventListener("mousedown", () =>{
+    cursor.classList.add("clicked");
+});
+// when cursor is not clicking remove clicked class
+document.addEventListener("mouseup", () => {
+    cursor.classList.remove("clicked");
+});
